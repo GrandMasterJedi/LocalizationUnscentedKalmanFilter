@@ -3,6 +3,15 @@ Self-Driving Car Engineer Nanodegree Program
 
 
 
+Constant turn rate and velocity magnitude (CTRV) model
+
+* Integral of the change in velocity from time k to k+1? 0
+* integral of the yaw rate from time k to k+1? yawRate * dt
+*
+
+http://www.wolframalpha.com/input/?i=%28v+%28-sin%28a%29+%2B+sin%28a+%2B+b+%28-c+%2B+d%29%29%29%29%2Fb&lk=1&assumption=%22ClashPrefs%22%20-%3E%20{%22Math%22}
+
+
 ## Files in the Github src Folder
 The files you need to work with are in the src folder of the github repository.
 
