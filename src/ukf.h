@@ -67,6 +67,10 @@ public:
   ///* Sigma point spreading parameter
   double lambda_;
 
+  // Add NIS measure for laser and radar (Normalized innovation squared). Sandwich formula
+  double NISlidar_;
+  double NISradar_;
+
 
   /**
    * Constructor
