@@ -4,3 +4,9 @@
 # build files
 build/
 UKF/
+
+# NIS log copied from console and excel file to plot NIS 
+NIS.xlsx
+NISlidar_dataset1.txt
+
+NISradar_dataset1.txt

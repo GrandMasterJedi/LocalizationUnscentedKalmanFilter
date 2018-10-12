@@ -2,18 +2,24 @@
 
 
 [image1]: ./example/dataset1_output.PNG "out1"
-[image2]: ./example/dataset2_output.PNG "out2"
-
+[image2]: ./example/LidarNIS.png "lidar"
+[image3]: ./example/RadarNIS.png "radar"
 
 The Unscented algorithm (sampling based Kalman Filter) is used to estimate the state of a vehicle assuming a "Constant Turn Rate and Velocity" (CRTV) model from noisy lidar and radar measurement. The state is composed of vehicle position ((x,y) Cartesian coordinates), velocity (assumed constant), yaw and yaw rate (assumed constant). 
 
-The following images show the output of the Kalman Filter prediction (green dots) based on the two simulated dataset of noisy lidar and radar measurement (blue and red dots).
+The following images show the output of the Kalman Filter prediction (green dots) based on the the simulated dataset of noisy lidar and radar measurement (blue and red dots).
 
 ![alt text][image1]
-![alt text][image2]
 
 
 This project is my solution to term 2.2 of the Udacity Self-Driving Car Engineer Nanodegree Program. Check the original project repository for more information. 
+
+Based on the simulated dataset 1 (Udacity Term 2 Simulator), the RMSE for the state vector are below project targets. The NIS (Normalized Innovation Squared) performance measure follows their theoretical value (Chi2 distribution). Below is the NIS for both radar and lidar measurement prediction plotted with their 95% theoretical value (in orange). For only a few prediction points, this measure exceeds this upper limit. 
+
+![alt text][image2]
+![alt text][image3]
+
+
 
 ---
 ## Resources & Dependencies
